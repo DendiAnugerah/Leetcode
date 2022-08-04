@@ -18,7 +18,7 @@ public:
 
         for (int j = 0; j < t.size(); j++){
             count[t[j] - 'a']--;
-            if (count[t[j] - 'a'] - 0){
+            if (count[t[j] - 'a'] < 0){
                 return false;
             }
         }
